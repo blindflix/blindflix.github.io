@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Audio Canales</title>
+<p>Disfruta del entretenimiento sin ver!</p>
+<br>
+<p>donde quieras, cuando  quieras...</p>
+<script type="text/javascript">
+document.oncontextmenu = function(){return false;}
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://briandanchilla.com/js/audiojs/audio.min.js"></script> 
+    <script>
+      $(function() { 
+        // Setup the player to autoplay the next track
+        var a = audiojs.createAll({
+          trackEnded: function() {
+            var next = $('p.playing').next();
+            if (!next.length) next = $('p').first();
+            next.addClass('playing').siblings().removeClass('playing');
+            audio.load($('a', next).attr('data-src'));
+            audio.play();
+          }
+        });
+        
+        // Load in the first track
+        var audio = a[0];
+            first = $('p a').attr('data-src');
+        $('p').first().addClass('playing');
+        audio.load(first);
+        // Load in a track on click
+        $('p').click(function(e) {
+          e.preventDefault();
+          $(this).addClass('playing').siblings().removeClass('playing');
+          audio.load($('a', this).attr('data-src'));
+          audio.play();
+        });
+        // Keyboard shortcuts
+        $(document).keydown(function(e) {
+          var unicode = e.charCode ? e.charCode : e.keyCode;
+             // right arrow
+          if (unicode == 39) {
+            var next = $('p.playing').next();
+            if (!next.length) next = $('p').first();
+            next.click();
+            // back arrow
+          } else if (unicode == 37) {
+            var currentTime -10 = $('p.playing').currentTime = -10();
+            if (!prev.length) prev = $('p').last();
+            prev.click();
+            // spacebar
+          } else if (unicode == 32) {
+            audio.playPause();
+          }
+        })
+      });
+    </script>
+</head>
+<body>
+      <audio preload></audio>
+<h1>Canales nacionales</h1>
+<ul>
+<p><a href="#"data-src="http://200.49.131.2/america">América</a></p>
+<p><a href="#"data-src="http://200.49.131.2/canal7">TV pública</a></p>
+<p><a href="#"data-src="http://200.49.131.2/canal9">Canal 9</a></p>
+<p><a href="#"data-src="http://200.49.131.2/telefe">Telefé</a></p>
+<p><a href="#"data-src="http://200.49.131.2/canal13">Canal 13</a></p>
+<p><a href="#"data-src="http://200.49.131.2/encuentro">Encuentro</a></p>
+<p><a href="#"data-src="http://200.49.131.2/magazine">Ciudad Magazine</a></p>
+<p><a href="#"data-src="http://200.49.131.2/volver">Volver</a></p>
+<p><a href="#"data-src="http://200.49.131.2/a24">A 24</a></p>
+<p><a href="#"data-src="http://200.49.131.2/c5n">C5N</a></p>
+<p><a href="#"data-src="http://200.49.131.2/cronicatv">Crónica TV</a></p>
+<p><a href="#"data-src="http://200.49.131.2/canal26">Canal 26</a></p>
+<p><a href="#"data-src="http://200.49.131.2/tn">TN Todo Noticias</a></p>
+</ul>
+<h2>deportes</h2>
+<ul>
+<p><a href="#"data-src="http://200.49.131.2/foxsports">Fox Sports</a></p>
+<p><a href="#"data-src="http://200.49.131.2/foxsports2">Fox Sports2</a></p>
+<p><a href="#"data-src="http://200.49.131.2/foxsports3">Fox Sports3</a></p>
+<p><a href="#"data-src="http://200.49.131.2/espn">ESPN</a></p>
+<p><a href="#"data-src="http://200.49.131.2/espn2">ESPN2</a></p>
+<p><a href="#"data-src="http://200.49.131.2/espn3">ESPN3</a></p>
+<p><a href="#"data-src="http://200.49.131.2/espn-mas">ESPN más</a></p>
+<p><a href="#"data-src="http://200.49.131.2/tycsports">TyC Sports</a></p>
+<p><a href="#"data-src="http://200.49.131.2/deportv">Depor-TV</a></p>
+<p><a href="#"data-src="http://200.49.131.2/elgarage">El Garage</a></p>
+<p><a href="#"data-src="http://200.49.131.2/americasports">América Sports</a></p>
+<p><a href="#"data-src="http://200.49.131.2/nbatv">NBA TV</a></p>
+</ul>
+<h3>Cine, series y documentales</h3>
+<ul>
+<p><a href="#"data-src="http://200.49.131.2/tnt">TNT</a></p>
+<p><a href="#"data-src="http://200.49.131.2/tcm">TCM</a></p>
+<p><a href="#"data-src="http://200.49.131.2/thefilmzone">The Film Zone</a></p>
+<p><a href="#"data-src="http://200.49.131.2/cinecanal">Cine Canal</a></p>
+<p><a href="#"data-src="http://200.49.131.2/studio">Studio Universal</a></p>
+<p><a href="#"data-src="http://200.49.131.2/cinemax">Cine Max</a></p>
+<p><a href="#"data-src="http://200.49.131.2/paramount">Paramount Channel</a></p>
+<p><a href="#"data-src="http://200.49.131.2/incaa">Cine Argentino</a></p>
+<p><a href="#"data-src="http://200.49.131.2/space">Space</a></p>
+<p><a href="#"data-src="http://200.49.131.2/isat">Isat</a></p>
+<p><a href="#"data-src="http://200.49.131.2/fx">FX</a></p>
+<p><a href="#"data-src="http://200.49.131.2/fox">Fox</a></p>
+<p><a href="#"data-src="http://200.49.131.2/sony">Sony</a></p>
+<p><a href="#"data-src="http://200.49.131.2/warner">Warner Channel</a></p>
+<p><a href="#"data-src="http://200.49.131.2/axn">AXN</a></p>
+<p><a href="#"data-src="http://200.49.131.2/amc">AMC</a></p>
+<p><a href="#"data-src="http://200.49.131.2/tntseries">TNT Series</a></p>
+<p><a href="#"data-src="http://200.49.131.2/unichannel">Universal Channel</a></p>
+<p><a href="#"data-src="http://200.49.131.2/syfy">Sy-Fy</a></p>
+<p><a href="#"data-src="http://200.49.131.2/trutv">Tru TV</a></p>
+<p><a href="#"data-src="http://200.49.131.2/homeandhealth">Discovery Home And Heald</a></p>
+<p><a href="#"data-src="http://200.49.131.2/eurochannel">Euro Chanel</a></p>
+<p><a href="#"data-src="http://200.49.131.2/europa">Europa</a></p>
+<p><a href="#"data-src="http://200.49.131.2/natgeo">Nat Geo</a></p>
+<p><a href="#"data-src="http://200.49.131.2/natgeowild">Nat Geo Wild</a></p>
+<p><a href="#"data-src="http://200.49.131.2/thehistorychannel">History Channel</a></p>
+<p><a href="#"data-src="http://200.49.131.2/discoveryturbo">Discovery Turbo</a></p>
+<p><a href="#"data-src="http://200.49.131.2/theater">Discovery Theater</a></p>
+</ul>
+<h4>Música</h4>
+<ul>
+<p><a href="#"data-src="http://200.49.131.2/mtv">MTV</a></p>
+<p><a href="#"data-src="http://200.49.131.2/muchmusic">Much Music</a></p>
+<p><a href="#"data-src="http://200.49.131.2/vh1">Vh1</a></p>
+<p><a href="#"data-src="http://200.49.131.2/htv">HTV</a></p>
+<p><a href="#"data-src="http://200.49.131.2/quiero">Quiero</a></p>
+<p><a href="#"data-src="http://200.49.131.2/cm">CM</a></p>
+</ul>
+<h5>Radios AM</h5>
+<ul>
+<p><a href="#"data-src="http://14103.live.streamtheworld.com/CONTINENTALAAC.aac">Continental</a></p>
+<p><a href="#"data-src="http://190.113.128.139:8080/LaRedCapital">La red</a></p>
+<p><a href="#"data-src="http://201.212.6.37/Mitre790.aac">Mitre</a></p>
+<p><a href="#"data-src="https://16843.live.streamtheworld.com/CADENA3.mp3">Cadena 3</a></p>
+<p><a href="#"data-src="http://192.99.38.174:9342/stream">AM750</a></p>
+<p><a href="#"data-src="http://209.95.35.49:7012/live">Radio Rivadavia</a></p>
+<p><a href="#"data-src="http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad1">Radio Nacional</a></p>
+<p><a href="#"data-src="http://181.119.157.98:8000/amdelplata.mp3">AM delplata</a></p>
+</ul>
+<h6>Radios FM</h6>
+<ul>
+<p><a href="#"data-src="http://16693.live.streamtheworld.com/ASPENAAC.aac">aspen</a></p>
+<p><a href="#"data-src="http://mp3.metroaudio1.stream.avstreaming.net:7200/metro">Metro</a></p>
+<p><a href="#"data-src="http://20823.live.streamtheworld.com/LOS40_ARGENTINA.mp3">Los 40 Principales</a></p>
+<p><a href="#"data-src="http://201.212.6.37/la100.aac">la100</a></p>
+<p><a href="#"data-src="http://edge-np.cdn.mdstrm.com/5a9ee26311c043ae48e40bcd.mp3">Radio disney</a></p>
+<p><a href="#"data-src="http://69.175.20.242:8086/live">Pop radio</a></p><p><a href="#"data-src="http://streaming.latina101.com.ar:8080/RadioLatina">latina fm</a></p>
+<p><a href="#"data-src="http://192.99.150.52:9904/;">vorterix</a></p>
+<p><a href="#"data-src="https://18703.live.streamtheworld.com/RQPAAC.aac">RQP</a></p>
+<p><a href="#"data-src="https://turadioonline.xyz:7524/stream.aac">FM folk (concepción del uruguay, entre rios)</a></p>
+<p><a href="#"data-src="http://173.243.114.218:8133/stream">FM wini (Winifreda La Pampa)</a></p>
+<p><a href="#"data-src="http://stream.estudioaero.com:8126/;">Radio 2000 (camilo aldao)</a></p>
+<p><a href="#"data-src="http://streaming1.locucionar.com:13697/stream">radio eclipse (106.5 tupungato mendoza)</a></p>
+</ul>
+<h6>Radios online</h6>
+<ul>
+<p><a href="#"data-src="http://relayweb.relatores.com.ar/radio.mp3">Relatores (la radio del futbol argentino)</a></p>
+<p><a href="#"data-src="http://edge.mixlr.com/channel/jpffz">El destape</a></p>
+<p><a href="#"data-src="http://51.75.174.31:8094/stream">Net 80 radio</a></p>
+<p><a href="#"data-src="http://­www.lamasprendida.com­:8000/live">la mas prendida (la radio que te enciende)</a></p>
+</ul>
+    </div>
+si notás que un canal no está funcionando correctamente, o tenés simplemente alguna pregunta que hacerme, aquí debajo te dejo mi
+<a href="http://twitter.com/eduardopetrini3">Twitter</a>
+<a href="http://m.facebook.com/eduardo.petrini.5">Facebook</a>
+<br>
+o mi whatsapp que es: (eduardo petrini) +543468514253
+<br>
+para cualquier consulta o inquietud
+<br>
+Sitio web creado por Eduardo Petrini, Copyright © 2018
+</body>
+</html>
