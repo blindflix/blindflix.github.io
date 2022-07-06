@@ -1,0 +1,25 @@
+#EXTM3U
+#EXTINF:-1,Cadena 3
+http://playerservices.streamtheworld.com/api/livestream-redirect/CADENA3AAC.aac
+#EXTINF:-1,fm córdoba
+http://playerservices.streamtheworld.com/api/livestream-redirect/FM_CORDOBAAAC.aac
+#EXTINF:-1,RADIO POPULAR.
+http://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_POPULARAAC.aac
+#EXTINF:-1,RADIO CONTINENTAL
+http://playerservices.streamtheworld.com/api/livestream-redirect/CONTINENTALAAC.aac
+#EXTINF:-1,RADIO LA RED
+http://playerservices.streamtheworld.com/api/livestream-redirect/LA_RED_AM910AAC.aac
+#EXTINF:-1,RADIO RIVADAVIA
+https://musicsrc.cvattv.com.ar/RRIV
+#EXTINF:-1,RADIO MITRE
+https://musicsrc.cvattv.com.ar/RMIT
+#EXTINF:-1,RADIO NACIONAL
+https://musicsrc.cvattv.com.ar/RNAC
+#EXTINF:-1,LA 100
+https://musicsrc.cvattv.com.ar/L100
+#EXTINF:-1,CNN RADIO
+https://musicsrc.cvattv.com.ar/RCNN
+#EXTINF:-1,RADIO DISNEY
+https://musicsrc.cvattv.com.ar/RDIS
+#EXTINF:-1,LOS 40 PRINCIPALES
+http://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_ARGENTINAAAC.aac
